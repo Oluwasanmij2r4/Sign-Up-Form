@@ -18,15 +18,55 @@
         <p class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
     </section>
 
-    <section class="side-B">
-<p>
-    This is not a real online service You know you need something
-    like this in your life to help you realize your deepest dreams.
-    Sign up <i>now</i> to get started.
-</p>
-<p>
-You know you want to.
-</p>
-    </section>
+    <main>
+        <section class="side-B">
+        <div class="detail">
+            <p>
+            This is not a real online service You know you need something like this in your life to help you realize your deepest dreams.
+            <br>Sign up <i>now</i> to get started.
+            </p>
+            <p class="you-want">
+            You know you want to.
+            </p>
+        </div>
+        </section>
+        <section class="my-form">
+            <form action="#" method="post">
+                <fieldset class="fieldbox">
+                    <legend class="legend-text">Let's do this!</legend>
+
+                    <section>
+                        <div>
+                            <label for="fnmane">first name</label>
+                            <input type="text" id="fname">
+                        </div>
+                        <div>
+                            <label for="email">email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="passw">password</label>
+                            <input type="password" id="passw" required>
+                        </div>
+                    </section>
+
+                    <section class="left-form">
+                        <div>
+                            <label for="lname">last name</label>
+                            <input type="text" id="lname">
+                        </div>
+                        <div>
+                            <label for="pnumber">phone number</label>
+                            <input type="number" id="pnumber" pattern="0\d{10}">
+                        </div>
+                        <div>
+                            <label for="passw">confirm password</label>
+                            <input type="password" id="passw" required>
+                        </div>
+                    </section>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
