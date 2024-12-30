@@ -1,166 +1,234 @@
 @font-face {
-    font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "norsebold";
+  src: url("norse-bold-webfont.woff2") format("woff2"),
+    url("norse-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'norsebold', serif;
-    font-size: 2.5rem;
-    min-height: 100vh;
-    display: flex;
+body {
+  font-family: "norsebold", serif;
+  font-size: 2.5rem;
+  min-height: 100vh;
+  display: flex;
 }
 
-.side-A{
-    background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
-    width: 45%;
+.side-A {
+  background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
+  width: 45%;
 }
 
 .side-A a {
-    color: white;
+  color: white;
 }
 
-.side-A .logo-text{
-    font-family: "Aladin", serif;
-    font-size: min(calc(4.5rem + 3vh), 7rem, 7vw);
-    color: white;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    margin-left: -10rem;
+.side-A .logo-text {
+  font-family: "Aladin", serif;
+  font-size: min(calc(4.5rem + 3vh), 7rem, 7vw);
+  color: white;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  margin-left: -10rem;
 }
 
-.side-A img{
-    max-width: clamp(50px, 100%, 200px);
+.side-A img {
+  max-width: clamp(50px, 100%, 200px);
 }
-.side-A .container{
-    background-color: #000;
-    opacity: .5;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 30%;
-    padding: 50px 25px;
-}
-
-.credit{
-    text-align: center;
-    position: relative;
-    top: 400px;
-    color: white;
+.container {
+  background-color: #000;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30%;
+  padding: 50px 25px;
 }
 
-.side-B{
-    font-weight: bold;
-    background-color: rgba(234, 238, 241, 0.712);
-    width: 100%;
-    padding: 120px 200px 40px 50px;
-    font-size: 2rem;
+.credit {
+  text-align: center;
+  position: relative;
+  top: 400px;
+  color: white;
 }
 
-.side-B .detail{
-     width: 90%;
+main {
+  width: 55%;
+}
+.side-B {
+  font-weight: bold;
+  background-color: rgba(234, 238, 241, 0.712);
+  max-width: 100%;
+  padding: 120px 200px 40px 50px;
+  font-size: 2rem;
 }
 
-.side-B .you-want{
-    margin: 40px 0;
+.side-B .detail {
+  width: 90%;
 }
 
-.my-form{
-    background-color: white;
-    padding: 50px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+.side-B .you-want {
+  margin: 40px 0;
 }
 
-.fieldbox{
-    border: none;
-    display: flex;
+.my-form {
+  background-color: white;
+  padding: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
 }
 
-.legend-text{
-    font-size: 2.5rem;
-    font-weight: bold;
+.fieldbox {
+  border: none;
+  display: flex;
+  gap: 3.5rem;
 }
 
-.left-form{
-    margin-left: 150px;
+.legend-text {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.my-form div{
-    display: grid;
+.my-form div {
+  display: grid;
 }
 
-.my-form label{
-    text-transform: uppercase;
-    margin-top: 30px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
+.my-form label {
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
 }
 
-.my-form input{
-    padding: 15px;
-    width: 500px;
-    border: 1px solid #E5E7EB;
-    border-radius: 15px;
-    font-size: 1.5rem;
+.my-form input {
+  padding: 15px;
+  width: 500px;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  font-size: 1.5rem;
 }
 
-.my-form input:focus{
-    border: 1px solid blue;
-    box-shadow: 0 1px 5px rgba(0, 0, 255, 0.6);
-    outline: none;
+.my-form input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 1px 5px rgba(0, 0, 255, 0.6);
+  outline: none;
 }
 
-input[type="password"]:invalid{
-    border: 2px solid red;
+input[type="password"]:invalid {
+  border: 2px solid red;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.create-section{
-    background-color: rgba(234, 238, 241, 0.712);
+.create-section {
+  background-color: rgba(234, 238, 241, 0.712);
+  width: 100%;
+  padding: 40px 200px 120px 50px;
+}
+
+.create-section .btn {
+  padding: 20px;
+  background-color: #596d48;
+  border: 2px solid #596d48;
+  border-radius: 15px;
+  color: white;
+  width: 500px;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+}
+
+.create-section span {
+  color: #596d48;
+}
+
+@media (max-width: 1500px) {
+  body {
+    display: block;
+  }
+
+  .side-A {
+    padding: 50px 0;
     width: 100%;
-    padding: 40px 200px 120px 50px;
+  }
+
+  .side-A img {
+    max-width: 50%;
+  }
+  .bg-img {
+    max-width: 50%;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .credit {
+    top: 40px;
+    font-size: 1rem;
+  }
+
+  main {
+    width: 100%;
+  }
+  .side-B {
+    padding: 100px 150px 25px 30px;
+    font-size: 1.5rem;
+  }
+
+  .fieldbox{
+    gap: 0;
+  }
+
+  .side-B .you-want {
+    margin: 20px 0;
+  }
+
+  .create-section {
+    padding: 25px 150px 100px 30px;
+  }
+  .my-form label {
+    font-size: 1rem;
+  }
+  .my-form input {
+    max-width: 50%;
+    font-size: 1.5rem;
+  }
 }
 
-.create-section .btn{
-    padding: 20px;
-    background-color: #596D48;
-    border: 2px solid #596D48;
-    border-radius: 15px;
-    color: white;
-    width: 500px;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    margin-bottom: 50px;
-}
 
-.create-section span{
-    color: #596D48;
+@media (max-width: 800px) {
+     .side-A img {
+    max-width: 25%;
+  }
+  .bg-img {
+    max-width: 50%;
+  }
+  .side-A .logo-text {
+  margin-left: -8rem;
 }
-@media (max-width: 500px) {
-    .side-A .logo-text{
-        margin-left: 2.5rem;
-    }
-}
+  .fieldbox {
+    display: block;
+  }
 
-@media (max-width: 1000px) {
-    .side-A .logo-text{
-        margin-left: .5rem;
-    }
+  .my-form input {
+    font-size: 1rem;
+  }
+
+  .create-section .btn {
+  max-width: 250px;
+  font-size: 1rem;
+}
 }
